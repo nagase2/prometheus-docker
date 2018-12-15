@@ -6,6 +6,7 @@ services:
       - 8080:8080
     volumes:
       - .:/code
+      - ./data/mvn_cache:/root/.m2
   prometheus:
     image: prom/prometheus
     container_name: prometheus
